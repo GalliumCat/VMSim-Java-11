@@ -41,14 +41,14 @@ public class VMS extends Applet {
     /  So it can be compiled for post-Java 11
      */
     public static void main(String[] args) {
-        VMS vms = new VMS();
-        JFrame VMSFrame = new JFrame("VMSsim");
-        VMSFrame.add(vms);
-        VMSFrame.pack();
-        VMSFrame.setVisible(true);
-        VMSFrame.setExtendedState(Frame.MAXIMIZED_BOTH | VMSFrame.getExtendedState());
-        VMSFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        vms.init();
+        VMS vm = new VMS();
+        JFrame VMFrame = new JFrame("VMSim");
+        VMFrame.add(vm);
+        VMFrame.pack();
+        VMFrame.setVisible(true);
+        VMFrame.setExtendedState(Frame.MAXIMIZED_BOTH | VMFrame.getExtendedState());
+        VMFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        vm.init();
     }
 
     protected static void setUpdatePT(boolean var0) {
